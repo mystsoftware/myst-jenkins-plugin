@@ -13,7 +13,7 @@ import org.jenkinsci.plugins.myst.beans.ActionBean;
 import org.jenkinsci.plugins.myst.beans.ConfigBean;
 
 /**
- * @author Fabio Douek
+ * @author Rubicon Red
  *
  */
 public class Context {

@@ -28,7 +28,7 @@ import java.util.List;
 
 /**
 * Represents a MyST agent installation in a system.
-* @author Fabio Douek
+* @author Rubicon Red
 */
 public class MystInstallation extends ToolInstallation implements EnvironmentSpecific<MystInstallation>, NodeSpecific<MystInstallation> {
 

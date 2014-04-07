@@ -7,7 +7,7 @@ import hudson.tools.ToolInstallation;
 import org.kohsuke.stapler.DataBoundConstructor;
 
 /**
-* Automatic MyST installer from Repository
+* Automatic MyST installer from Repository 
 */
 /* Disbled, until we manage to sortout the crawler issue
 

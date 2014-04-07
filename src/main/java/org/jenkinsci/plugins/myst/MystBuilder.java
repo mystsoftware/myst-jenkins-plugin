@@ -37,7 +37,7 @@ import java.util.List;
 /**
  * MyST Builder
  * 
- * @author Fabio Douek
+ * @author Rubicon Red
  */
 public class MystBuilder extends Builder {
 

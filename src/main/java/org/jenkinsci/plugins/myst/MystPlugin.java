@@ -3,7 +3,7 @@ package org.jenkinsci.plugins.myst;
 import hudson.Plugin;
 
 /**
- * @author Fabio Douek
+ * @author Rubicon Red
  *
  */
 public class MystPlugin extends Plugin {

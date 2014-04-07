@@ -6,7 +6,7 @@ import hudson.model.AbstractProject;
 /**
  * Allows user to go to the Myst Dashboard.
  *
- * @author Fabio Douek
+ * @author Rubicon Red
  */
 public final class MystProjectAction implements ProminentProjectAction {
   private final AbstractProject<?, ?> project;
