@@ -1,0 +1,46 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <j:invokeStatic var="availableActions" className="org.jenkinsci.plugins.myst.Context" method="getActions">
+   <j:arg type="java.lang.String" value="${descriptor.getMystConsoleUrl()}" />
+  </j:invokeStatic>
+
+  <j:invokeStatic var="availableConfigs" className="org.jenkinsci.plugins.myst.Context" method="getAvailableConfigs">
+  	<j:arg type="java.lang.String" value="${descriptor.getMystConsoleUrl()}" />
+  </j:invokeStatic>
+  
+  <f:entry title="Action" field="mystAction">
+      <select class="setting-input" name="mystAction">
+        <j:forEach var="inst" items="${availableActions}">
+          <f:option value="${inst.getName()}" selected="${inst.getName()==instance.mystAction}">${inst.getName()} (${inst.getDesc()})
+          </f:option>
+        </j:forEach>
+      </select>  
+  </f:entry>
+  <f:entry title="Config" field="config">
+      <select class="setting-input" name="config">
+        <j:forEach var="inst" items="${availableConfigs}">
+          <f:option value="${inst.getName()}" selected="${inst.getName()==instance.config}">${inst.getName()} (${inst.getDesc()})
+          </f:option>
+        </j:forEach>
+      </select>  
+  </f:entry>
+  <f:section title="Advanced MyST Options">
+  <f:advanced>
+  	<f:entry title="MyST Installation Name" field="mystInstallationName" description="(Optional) When empty uses the first MyST installer.">
+    	<f:textbox />
+  	</f:entry>
+  	<f:entry title="MyST Workspace" field="mystWorkspace" description="(Optional) Leave it empty, to use the same as the Jenkins Workspace">
+    	<f:textbox />
+  	</f:entry>
+  	<f:entry title="Properties" field="properties" description="(Optional) Additional properties. E.g: -Dcore.fmw.domain-home=/u01/app/oracle/domains/domain1 -Dcore.domain.name=domain1">
+    	<f:textbox />
+  	</f:entry>
+  </f:advanced>
+  </f:section>
+
+</j:jelly>

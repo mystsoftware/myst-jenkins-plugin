@@ -1,5 +1,14 @@
-myst-jenkins-plugin
-===================
+MyST plugin for Jenkins
+=======================
+Licensed under [Apache2 Licence].
+ 
+About
+-----
+Provides integration between Jenkins and MyST
 
-MyST Jenkins Plugin for Oracle Fusion Middleware
-x
+Info
+-------------
+* Plugin documentation [wiki]
+
+[wiki]: http://wiki.jenkins-ci.org/display/JENKINS/MyST+Plugin
+[Apache2 Licence]: http://www.apache.org/licenses/LICENSE-2.0.txt
