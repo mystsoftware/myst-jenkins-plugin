@@ -12,7 +12,6 @@
 	<packaging>hpi</packaging>
 
 	<url>http://wiki.jenkins-ci.org/display/JENKINS/MyST+Plugin</url>
-
 	<licenses>
 		<license>
 			<name>TBD</name>
