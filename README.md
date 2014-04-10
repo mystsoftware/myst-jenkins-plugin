@@ -1,6 +1,6 @@
 MyST plugin for Jenkins
 =======================
-Licensed under [Apache2 Licence].
+Licensed under [Apache2 Licence]
  
 About
 -----
